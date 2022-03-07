@@ -1,11 +1,10 @@
 print ("Please enter a sequence")
-k = input() #store the sequence
+k = input() #read the sequence
 print ("Please enter the character for the marker")
-y = input()
+y = input() #read the marker
 
-first=0
-second=0
-t=0
+first=0 #variable to use store the first marker
+second=0 #variable to use store the first marker
 
 
 for i in range(len(k)):
