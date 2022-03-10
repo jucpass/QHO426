@@ -10,11 +10,16 @@ def upper_case(word):
  word = word.upper()
  print (word)
 def mirrored(word):
- for i in range(len(word),0,-1):
-   print (f"{word[i]}")
+  for i in range(len(word)-1,-1,-1):
+   print (word[i],end="")
+   
 def repeat(word,rep):
-  for i in range (rep):
+#   for i in range(rep):
+#     print(word)
+  while rep >= 0:
    print (word)
+   rep-=1
+    
 def run():
   print("Insert a word to manipulate:")
   word = input()
@@ -31,8 +36,8 @@ def run():
    mirrored(word)
   elif choice == 5:
    print ("How many times to repeat?")
-   rep = input()
-   repeat(word,repeat)
+   rep = int(input())
+   repeat(word,rep)
   else:
    print ("Invalid Option")
 
