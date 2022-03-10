@@ -20,14 +20,3 @@ def play_guess_the_number():
   print ("Congrats, you guessed the number!")
 
 play_guess_the_number()
-  
-
-    
-    
-    
-  
-  
-  
-
-  
-  
